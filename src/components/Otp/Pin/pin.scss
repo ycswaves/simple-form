@@ -1,0 +1,42 @@
+@import 'src/index.scss';
+
+.pin-container {
+  display: flex;
+  padding: 5% 20% 10px;
+  justify-content: center;
+}
+
+.pinslot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  width: 40px;
+  height: 40px;
+  border-radius: 3px;
+  border: solid 0.5px #c5c5c5;
+  color: #9a9a9a;
+
+  & + & {
+    margin-left: 10px;
+  }
+
+  &-active {
+    border-color: #00b14f
+  }
+
+  &-error {
+    border-color: $color-error;
+    color: $color-error;
+  }
+
+  .filled {
+    color:  #676767;
+    font-size: 50px;
+  }
+}
+
+.pin-error-msg {
+  color: $color-error;
+  font-size: 12px;
+}
