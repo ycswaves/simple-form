@@ -1,5 +1,7 @@
-import React, { Component, Fragment } from 'react'
-import './pin.scss'
+import React, { Component, Fragment } from 'react';
+import Spinner from 'react-spinkit';
+import { mockValidation } from 'src/services/validateOtp';
+import './pin.scss';
 
 export class Pin extends Component {
   
@@ -7,6 +9,7 @@ export class Pin extends Component {
     password: '',
     lastNumKeyin: null,
     misMatch: false,
+    isValidating: false,
   };
 
   slots = [...Array(this.props.size).keys()];
@@ -16,14 +19,19 @@ export class Pin extends Component {
   }
 
   validate(password) {
-    console.log(password)
-    if (password != '2018') {
-      setTimeout(() => {
-        this.setState({misMatch: true, password: ''})
-      }, 1000);
-    } else {
-      this.setState({misMatch: false})
-    }
+    console.log(password);
+    this.setState({isValidating: true});
+    mockValidation(password).then(isValid => {
+      let newState = {};
+      if (isValid) {
+        newState.misMatch = false;
+      } else {
+        newState.misMatch = true;
+        newState.password = '';
+      }
+      newState.isValidating = false;
+      this.setState(newState);
+    });
   }
 
   onChange = (e) => {
@@ -76,6 +84,14 @@ export class Pin extends Component {
   }
 
   renderSlots() {
+    if (this.state.isValidating) {
+      return (
+        <div className="validator">
+          <Spinner className="spinner" name="ball-clip-rotate" color="#00b14f" fadeIn='none' />
+          Validating
+        </div>
+      );
+    }
     return (
       this.slots.map(i => 
         <div key={i} className={`pinslot ${this.activeClass(i)}`}>

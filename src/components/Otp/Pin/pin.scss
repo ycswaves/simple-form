@@ -40,3 +40,11 @@
   color: $color-error;
   font-size: 12px;
 }
+
+.validator {
+  font-size: 12px;
+
+  .spinner {
+    transform: scale(1.3);
+  }
+}

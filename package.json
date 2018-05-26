@@ -8,6 +8,7 @@
     "react": "^16.4.0",
     "react-dev-utils": "^5.0.1",
     "react-dom": "^16.4.0",
+    "react-spinkit": "^3.0.0",
     "whatwg-fetch": "2.0.3"
   },
   "scripts": {
