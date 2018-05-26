@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import Spinner from 'react-spinkit';
 import { mockValidation } from 'src/services/validateOtp';
+import { validateOtp } from 'src/actions';
 import './pin.scss';
 
 export class Pin extends Component {
@@ -20,12 +22,12 @@ export class Pin extends Component {
   }
 
   validate(password) {
-    console.log(password);
     this.setState({isValidating: true});
     mockValidation(password).then(isValid => {
       let newState = {};
       if (isValid) {
-        newState.misMatch = false;
+        this.props.validateOtp();
+        return;
       } else {
         newState.misMatch = true;
         newState.password = '';
@@ -128,3 +130,5 @@ export class Pin extends Component {
     )
   }
 }
+
+export default connect(null, {validateOtp})(Pin);

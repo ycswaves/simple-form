@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Titlebar } from 'components/Titlebar';
 import './otp.scss';
-import { Pin } from './Pin';
+import Pin from './Pin';
 import { Timer } from './Timer';
 
 export class Otp extends Component {
