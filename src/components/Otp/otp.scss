@@ -2,7 +2,18 @@
   text-align: center;
 
   &__instruction {
-    padding-top: 10%;
+    padding-top: 5%;
     line-height: 24px;
+  }
+
+  &__resend {
+    padding: 5px;
+    margin-top: 30px;
+    p {
+      margin: 5px;
+    }
+    a {
+      color: #00a5cf;
+    }
   }
 }

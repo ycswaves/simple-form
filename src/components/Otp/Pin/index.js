@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import Spinner from 'react-spinkit';
 import { mockValidation } from 'src/services/validateOtp';
 import './pin.scss';
@@ -14,7 +14,8 @@ export class Pin extends Component {
 
   slots = [...Array(this.props.size).keys()];
 
-  openKeypad = () => {    
+  openKeypad = () => {
+    this.setState({misMatch: false});
     this.passwordInput.focus();
   }
 
@@ -39,7 +40,9 @@ export class Pin extends Component {
     const { size } = this.props;
 
     if (password.length === size) {
-      this.validate(password);
+      setTimeout(() => {
+        this.validate(password);
+      }, 500);
     }
 
     if (password.length > size) {
@@ -108,7 +111,7 @@ export class Pin extends Component {
   render() {
     const { misMatch } = this.state;
     return (
-      <Fragment>
+      <div style={{minHeight: '90px'}}>
         <div className="pin-container" onClick={this.openKeypad}>
           {misMatch? this.renderError() : this.renderSlots()}
           <form>
@@ -121,7 +124,7 @@ export class Pin extends Component {
           </form>
         </div>
         {misMatch && <div className="pin-error-msg">Invalid password. Please try again.</div>}
-      </Fragment>
+      </div>
     )
   }
 }
