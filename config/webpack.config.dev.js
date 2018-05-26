@@ -87,6 +87,7 @@ module.exports = {
       
       // Support React Native Web
       // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
+      'components': path.resolve('src/components'),
       'react-native': 'react-native-web',
     },
     plugins: [
@@ -197,6 +198,9 @@ module.exports = {
                 options: {
                   importLoaders: 1,
                 },
+              },
+              {
+                loader: require.resolve('resolve-url-loader'),
               },
               {
                 loader: require.resolve('sass-loader'),
