@@ -1,0 +1,30 @@
+$line-height: 1.1rem;
+.navbar {
+  text-align: center;
+  line-height: $line-height;
+  padding: 15px;
+  position: relative;
+  font-size: $line-height;
+
+  &__back {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: #676767;
+    transform: scaleY(1.8);
+    font-weight: lighter;
+  }
+
+  &__icon {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    
+
+    &.payment {
+      width: 24px;
+      height: 24px;
+      background-image: url(/images/icon/payment-methods.svg);
+    }
+  }
+}

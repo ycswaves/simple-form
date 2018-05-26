@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/reward-tier-platinum</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Step-3-Wallet-GrabPay-by-OVO" transform="translate(-119.000000, -151.000000)" fill-rule="nonzero">
+            <g id="Wallet-balance">
+                <g id="Top-content" transform="translate(99.000000, 91.000000)">
+                    <g id="Rewards" transform="translate(20.000000, 60.000000)">
+                        <g id="icon/reward-tier-platinum">
+                            <g id="shape">
+                                <circle id="ring-copy" stroke="#99DFB8" stroke-width="2" fill="#FFFFFF" cx="12" cy="12" r="11"></circle>
+                                <polygon id="Shape" fill="#00B14F" points="10.2408733 12.0560725 7 9.01622524 8.44297304 17 15.5576235 17 15.5612026 16.9809115 15.5958005 16.9809115 15.5725364 16.9152947 17.0005965 9.01622524 13.8211644 11.9976139 12.0411596 7"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

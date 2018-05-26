@@ -1,4 +1,44 @@
 .wallet {
   min-height: 100vh;
   background-color: #f7f9fb;
+
+  &__container {
+    padding: 0 5% 20px;
+  }
+
+  .overlap {
+    margin-top: -45px;
+  }
+
+  .topup-link {
+    color: #00a5cf;
+    text-align: center;
+  }
+
+  .recent {
+    margin-top: 40px;
+
+    .title {
+      color: #898d97;
+    }
+
+    .tip {
+      text-align: center;
+
+      &__detail {
+        color: #898d97;
+        font-size: 0.75rem;
+      }
+    }
+  }
+}
+
+.ovo-topup {
+  display: flex;
+  align-items: center;
+
+  .text {
+    margin-left: 15px;
+    line-height: 1.4rem;
+  }
 }

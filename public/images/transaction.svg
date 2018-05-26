@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>illustration-empty-transaction</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M4,4 L51,4 L51,29 L4,29 L4,4 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="47" height="25" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="illustration-empty-transaction">
+            <g>
+                <ellipse id="shadow" fill="#EAEFF2" cx="50" cy="97.5" rx="50" ry="2.5"></ellipse>
+                <g id="Group" transform="translate(8.000000, 0.000000)">
+                    <path d="M78,6 L78,75.75 L9,75.75 L9,3.75 C9,1.67893219 10.6789322,0 12.75,0 L82.5,0 L82.5,6 L78,6 Z" id="Combined-Shape" fill="#CCEFDB"></path>
+                    <path d="M85,3.68421053 L85,14 L78,14 L78,3.68421053 C78,1.64947724 79.5670034,0 81.5,0 C83.4329966,0 85,1.64947724 85,3.68421053 Z" id="Combined-Shape" fill="#99DFB8"></path>
+                    <rect id="Rectangle-8" fill="#99DFB8" x="14" y="9.75" width="18" height="3"></rect>
+                    <rect id="Rectangle-8-Copy" fill="#99DFB8" x="14" y="15" width="12" height="3"></rect>
+                    <g id="Group-5" transform="translate(16.000000, 31.321429)">
+                        <path d="M54.8571429,0 L54.8571429,32.8928571 L0,32.8928571 L0,0 L54.8571429,0 Z" id="Rectangle-4" fill="#FFFFFF"></path>
+                        <use id="Rectangle-2" stroke="#66D095" mask="url(#mask-2)" stroke-width="1.2" stroke-dasharray="4" xlink:href="#path-1"></use>
+                    </g>
+                    <path d="M0.5,72 L73.5,72 L73.5,77.5096367 L73.5,82 L6.5,82 C3.1862915,82 0.5,79.3137085 0.5,76 L0.5,72 Z" id="Rectangle-13" fill="#99DFB8"></path>
+                    <path d="M69,72 L78,72 L78,77.3846154 C77.8101296,79.966326 75.8688103,82 73.5,82 C71.1311897,82 69.1898704,79.966326 69.0131156,77.3846154 L69,72 Z" id="Combined-Shape" fill="#CCEFDB"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
