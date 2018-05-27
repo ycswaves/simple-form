@@ -60,3 +60,25 @@
     font-weight: lighter;
   }
 }
+
+.wallet-activated-icon {
+  width: 36px;
+  height: 32px;
+  background-image: url(/images/icon/wallet-activated.svg);
+  align-self: center;
+  margin:0 10px;
+}
+
+.wallet-activated-text {
+  padding: 5px;
+  flex: 1;
+}
+
+.tooltip-container {
+  position: absolute;
+  right: 13px;
+  top: 54px;
+  max-width: 45%;
+  z-index: 99;
+  text-align: center;
+}

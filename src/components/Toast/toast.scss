@@ -1,0 +1,47 @@
+.toast {
+  display: flex;
+  position: absolute;
+  z-index: 99;
+  margin-left: auto;
+  margin-right: auto;
+  top: 66px;
+  left: 5%;
+  right: 5%;
+  border-radius: 6px;
+  background-color: #caefdb;
+  box-shadow: 0 2px 6px 0 rgba(28, 28, 28, 0.1);
+  font-size: 0.8rem;
+  transition: opacity 300ms, transform 300ms;
+  animation: toast-appear 300ms ease-out 1000ms forwards;
+  opacity: 0;
+  transform: scale(0);
+
+  &-to-be-dismissed {
+    animation: toast-disappear 300ms ease-out 0ms forwards;
+  }
+
+  &__close {
+    align-self: center;
+    margin: 0 10px;
+    font-size: 0.7rem;
+    color: #696969;
+  }
+}
+
+@keyframes toast-appear {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes toast-disappear {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
