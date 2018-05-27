@@ -3,4 +3,8 @@
   background-color: #fff;
   padding: 15px;
   box-shadow: 0 2px 6px 0 rgba(28, 28, 28, 0.1);
+
+  &-light {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+  }
 }

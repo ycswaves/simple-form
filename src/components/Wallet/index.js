@@ -22,7 +22,7 @@ export class Wallet extends Component {
             </Card>
             <div className="recent">
               <p className="title">Recent activity</p>
-              <Card type="lower">
+              <Card type="card-light">
                 <div className="tip">
                   <img src="/images/transaction.svg" alt="transaction" />
                   <p>Make a Transaction Today!</p>
